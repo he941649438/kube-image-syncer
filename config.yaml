@@ -1,9 +1,12 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - quay.io/prometheus/blackbox-exporter:v0.25.0
+  - quay.io/prometheus/alertmanager:v0.27.0
+  - quay.io/prometheus/prometheus:v2.54.0
+  - grafana/grafana:11.1.3
