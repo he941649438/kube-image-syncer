@@ -1,9 +1,22 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - quay.io/prometheus/alertmanager:v0.27.0
+  - quay.io/prometheus/blackbox-exporter:v0.25.0
+  - ghcr.io/jimmidyson/configmap-reload:v0.13.1
+  - quay.io/brancz/kube-rbac-proxy:v0.18.0
+  - grafana/grafana:11.1.4
+  - registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.13.0
+  - quay.io/brancz/kube-rbac-proxy:v0.18.0
+  - quay.io/brancz/kube-rbac-proxy:v0.18.0
+  - quay.io/prometheus/node-exporter:v1.8.2
+  - quay.io/brancz/kube-rbac-proxy:v0.18.0
+  - quay.io/prometheus/prometheus:v2.54.0
+  - registry.k8s.io/prometheus-adapter/prometheus-adapter:v0.12.0
+  - quay.io/prometheus-operator/prometheus-operator:v0.76.0
+  - quay.io/brancz/kube-rbac-proxy:v0.18.0  
