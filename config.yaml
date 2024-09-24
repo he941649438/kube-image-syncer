@@ -7,4 +7,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/skywalking-oap-server:9.3.0
+  - docker.io/nginx
