@@ -1,10 +1,16 @@
 # true/false
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - wangyanglinux/myapp:v1.0
+  - wangyanglinux/myapp:v2.0
+  - wangyanglinux/myapp:v3.0
+  - wangyanglinux/myapp:v4.0
+  - wangyanglinux/myapp:v5.0
+  - wangyanglinux/myapp:v6.0
+  - wangyanglinux/tools:busybox
