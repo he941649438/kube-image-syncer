@@ -9,4 +9,3 @@ kubernetes:
 images:
   - docker.io/nginx:latest
 
-
