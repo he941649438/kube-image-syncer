@@ -7,5 +7,6 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/ubuntu:22.04
-  - docker.io/base:latest
+  - docker.io/nginx:latest
+
+
