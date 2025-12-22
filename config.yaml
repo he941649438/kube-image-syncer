@@ -7,6 +7,7 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.6.5
+  - registry.k8s.io/ingress-nginx/controller:v1.14.1
 
 
